@@ -1,11 +1,12 @@
-
 * {
     margin: 0;
     position: 0;
 }
-html{
+
+html {
     box-sizing: border-box;
 }
+
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -14,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 @keyframes gradient {
@@ -29,15 +31,27 @@ body {
         background-position: 0% 50%;
     }
 }
-.calculator{
+
+.name{
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.calculator {
     background: white;
     width: 400px;
     border-radius: 10px;
-    box-shadow:0 5px 30px -5px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+    
 }
 
 /* Display */
-.calculator-display{
+.calculator-display {
     background: black;
     color: white;
     margin: 0;
@@ -48,7 +62,7 @@ body {
 
 }
 
-.calculator-display h1{
+.calculator-display h1 {
     margin: 0;
     padding: 25px;
     font-size: 45px;
@@ -59,28 +73,32 @@ body {
 }
 
 /* Scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: #888;
 }
-::-webkit-scrollbar-thumb:hover{
-    background:#555;
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 
 /* Buttons */
-.calculator-buttons{
+.calculator-buttons {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     padding: 10px;
 }
-button{
+
+button {
     min-height: 50px;
     font-size: 20px;
     font-weight: 400;
@@ -90,29 +108,35 @@ button{
     background: rgb(199, 199, 199);
 
 }
-button:hover{
-    filter: brightness(110%) ;
+
+button:hover {
+    filter: brightness(110%);
 }
-button:active{
+
+button:active {
     transform: translateY(1px);
 }
-button:focus{
+
+button:focus {
     outline: none;
 }
-.operator{
+
+.operator {
     background: grey;
     color: white;
     font-size: 30px;
 }
-.clear{
+
+.clear {
     background: red;
     color: white;
 }
-.clear:hover{
+
+.clear:hover {
     filter: brightness(90%);
 }
 
-.equal-sign{
+.equal-sign {
     grid-column: -2;
     grid-row: 2 / span 4;
     background-color: rgb(23, 202, 23);
@@ -121,7 +145,10 @@ button:focus{
 
 /* Media Query */
 @media screen and (max-width:600px) {
-    .calculator{
+    .calculator {
         width: 95%;
+    }
+    .name{
+        font-size:1.5em;
     }
 }
