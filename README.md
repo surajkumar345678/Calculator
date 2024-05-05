@@ -24,7 +24,7 @@ This is a simple calculator web application built using HTML, CSS, and JavaScrip
 
 ## Demo
 
-You can view a live demo of the calculator [here](#) (replace with the link to your live demo if available).
+You can view a live demo of the calculator [here](https://surajkumar345678.github.io/Calculator/).
 
 ## Contributing
 
@@ -33,6 +33,7 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## Screenshots
 
 *Desktop View:*
+
 ![Screenshot (69)](https://github.com/surajkumar345678/Calculator/assets/60316890/197341f2-9d1a-443b-a74c-cb0a091fddf3)
 
 *Mobile View:*
